@@ -3,13 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- TextView centralizado com o nome do app -->
+    <!-- TextView centralizado com o nome do app, em negrito, cor branca, com borda preta e \n entre 'Página' e 'Perfeita' -->
     <TextView
         android:id="@+id/splash_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pagina_perfeita"
+        android:text="Página\nPerfeita"
         android:textSize="50sp"
-        android:textColor="#fff000"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        android:background="@drawable/textview_border"
         android:layout_centerInParent="true"/>
 </RelativeLayout>
