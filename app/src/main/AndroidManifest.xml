@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permissão para acessar o armazenamento -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
 
@@ -17,7 +16,6 @@
         android:theme="@style/Theme.PaginaPerfeita"
         tools:targetApi="31">
 
-        <!-- Definindo a SplashActivity como a atividade inicial -->
         <activity android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -26,7 +24,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Definindo a MainActivity como a atividade que será chamada após a SplashActivity -->
         <activity android:name=".MainActivity" android:exported="true" />
     </application>
 

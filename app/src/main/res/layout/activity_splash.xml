@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/lofi_music_lofiartwork_gif___lofi_music_lofiartwork_lofi_art___discover___share_">
 
-    <!-- TextView centralizado com o nome do app, em negrito, cor branca, com borda preta e \n entre 'Página' e 'Perfeita' -->
-    <TextView
-        android:id="@+id/splash_text"
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:background="#6F000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Página\nPerfeita"
-        android:textSize="50sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:padding="16dp"
-        android:background="@drawable/textview_border"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rounded_image"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_splash"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Pagina Perfeita"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDFDFD"
+        android:textDirection="firstStrongLtr"
+        android:textSize="26sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
